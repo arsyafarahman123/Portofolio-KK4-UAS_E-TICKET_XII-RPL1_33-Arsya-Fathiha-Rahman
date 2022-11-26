@@ -1,0 +1,1342 @@
+{
+	"info": {
+		"_postman_id": "c8f13631-cffa-46d7-92dd-5d6c39e77116",
+		"name": "Praktikum KK4A",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23902509"
+	},
+	"item": [
+		{
+			"name": "EBOOK-API",
+			"item": [
+				{
+					"name": "SISWA",
+					"item": [
+						{
+							"name": "GET/SISWA",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/siswa",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"siswa"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST/SISWA",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/siswa?name=annisa&gender=female&age=16",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"siswa"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "annisa"
+										},
+										{
+											"key": "gender",
+											"value": "female"
+										},
+										{
+											"key": "age",
+											"value": "16"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT/SISWA",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "annisa",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "female",
+											"type": "text"
+										},
+										{
+											"key": "age",
+											"value": "16",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/siswa/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"siswa",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE/SISWA",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/siswa/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"siswa",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "BOOKS",
+					"item": [
+						{
+							"name": "GET/BOOKS",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST/BOOKS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "Buku Tutor Laravel 8",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Buku mengenai KK4 Kelas 10",
+											"type": "text"
+										},
+										{
+											"key": "author",
+											"value": "Anisa Azzahra",
+											"type": "text"
+										},
+										{
+											"key": "publisher",
+											"value": "yudhistira",
+											"type": "text"
+										},
+										{
+											"key": "date_of_issue",
+											"value": "2020-06-29",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT/BOOKS",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "Buku Tutor Laravel 8",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Buku mengenai KK4 Kelas 12",
+											"type": "text"
+										},
+										{
+											"key": "author",
+											"value": "Anisa Az Zahra",
+											"type": "text"
+										},
+										{
+											"key": "publisher",
+											"value": "Yudhistira",
+											"type": "text"
+										},
+										{
+											"key": "date_of_issue",
+											"value": "2020-06-29",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE/BOOKS",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/books/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AUTH",
+					"item": [
+						{
+							"name": "POST/REGISTER",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "name",
+											"value": "Annisa Az Zahra",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "anisaazzahra@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "Anisa1",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "Anisa1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/register",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST/LOGIN",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/login?name=Annisa Az Zahra&email=anisaazzahra18@gmail.com&password=Annisa18&password_confirmation=Annisa18",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Annisa Az Zahra"
+										},
+										{
+											"key": "email",
+											"value": "anisaazzahra18@gmail.com"
+										},
+										{
+											"key": "password",
+											"value": "Annisa18"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "Annisa18"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST/LOGOUT",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/logout",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "ETICKET-API",
+			"item": [
+				{
+					"name": "MAIN",
+					"item": [
+						{
+							"name": "BUY",
+							"item": [
+								{
+									"name": "POST/BUY",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "concert",
+													"value": "1",
+													"type": "text"
+												},
+												{
+													"key": "quantity",
+													"value": "2",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/main/buy",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"main",
+												"buy"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CONCERT",
+							"item": [
+								{
+									"name": "GET/CONCERT",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/main/concert",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"main",
+												"concert"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET/CONCERT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/main/concert/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"main",
+												"concert",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "TRANSACTION",
+							"item": [
+								{
+									"name": "GET/TRANSACTION",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/main/transaction",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"main",
+												"transaction"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET/TRANSACTION/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/main/transaction/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"main",
+												"transaction",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "ADMIN",
+					"item": [
+						{
+							"name": "ACCOUNT",
+							"item": [
+								{
+									"name": "GET/ACCOUNT",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/account",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"account"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "POST/ACCOUNT",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "zooane",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "zooane@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "password",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "password",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/admin/account",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"account"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET/ACCOUNT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/account/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"account",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PUT/ACCOUNT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "email",
+												"value": "zooane123@gmail.com",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "localhost:8000/api/admin/account/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"account",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DESTROY/ACCOUNT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/account/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"account",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "CONCERT",
+							"item": [
+								{
+									"name": "GET/CONCERT",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/account",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"account"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "POST/CONCERT",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "zooane",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "zooane@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "password",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "password",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/admin/concert",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"concert"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET/CONCERT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/concert/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"concert",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PUT/CONCERT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "email",
+												"value": "zooane123@gmail.com",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "localhost:8000/api/admin/concert/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"concert",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DESTROY/CONCERT/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/concert/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"concert",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "TRANSACTION",
+							"item": [
+								{
+									"name": "GET/TRANSACTION",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/transaction",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"transaction"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "POST/TRANSACTION",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "username",
+													"value": "zooane",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "zooane@gmail.com",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "password",
+													"type": "text"
+												},
+												{
+													"key": "password_confirmation",
+													"value": "password",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "localhost:8000/api/admin/transaction",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"transaction"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "GET/TRANSACTION/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/transaction/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"transaction",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "PUT/TRANSACTION/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "PUT",
+										"header": [
+											{
+												"key": "email",
+												"value": "zooane123@gmail.com",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": []
+										},
+										"url": {
+											"raw": "localhost:8000/api/admin/transaction/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"transaction",
+												"1"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "DESTROY/TRANSACTION/ID",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "3|0FcSFtScNvO8rKxuesX1lRZUSVCdv1sh97ZdAxw5",
+													"type": "string"
+												}
+											]
+										},
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "localhost:8000/api/admin/transaction/1",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"api",
+												"admin",
+												"transaction",
+												"1"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "AUTH",
+					"item": [
+						{
+							"name": "POST/LOGIN",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "nisaaaa",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/login",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST/LOGOUT",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST/REGISTER",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "nisaaaa",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "nisa@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "password",
+											"type": "text"
+										},
+										{
+											"key": "password_confirmation",
+											"value": "password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/register",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"register"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GET/INDEX",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
